@@ -1,0 +1,175 @@
+[
+    {
+        "Corporation":{
+            "Code": "MQS",
+            "Facilities":
+            [
+                {
+                    "Name": "Woodbine",
+                    "Number": "318",
+                    "Code": "WOODB",
+                    "Info": "PCC for their MAR",
+                    "Contacts": [
+                        {
+                            "Name": "Main Number",
+                            "Number": "7032345678"
+                        },
+                        {
+                            "Name": "Justine - DON",
+                            "Number": "7032345678"
+                        }
+                    ],
+                    "OTCs": 
+                        [
+                            "Polyethylene Glycol",
+                            "Robatussin",
+                            "Milk of Mag",
+                            "Senna Plus",
+                            "Senna",
+                            "Acetaminophen"
+                        ],
+                    "POS": 
+                        [
+                            "Email Eddie @Eddie.Hirschman@cedarthing.com",
+                            "As400 Price is Not acceptable"
+                        ]
+                },
+                {
+                    "Name": "Alexandria",
+                    "Number": "317",
+                    "Code": "ALEXA",
+                    "Info": "IVs Exist",
+                    "Contacts": 
+                        [
+                            {
+                                "Name": "Main Number",
+                                "Number": "7032345678"
+                            },
+                            {
+                                "Name": "Pauline - DON",
+                                "Number": "7032345678"
+                            }
+                        ],
+                    "OTCs": 
+                        [],
+                    "POS": 
+                    [
+                        "Email Eddie @Eddie.Hirschman@cedarthing.com",
+                        "As400 Price is Not acceptable"
+                    ]
+                },
+                {
+                    "Name": "Canterbury",
+                    "Number": "316",
+                    "Code": "CANTR",
+                    "Info": "",
+                    "Contacts": 
+                        [
+                            {
+                                "Name": "Main Number",
+                                "Number": "7035667834"
+                            },
+                            {
+                                "Name": "John - DON",
+                                "Number": "3011234567"
+                            }
+                        ],
+                    "OTCs": 
+                        [
+                            "Polyethylene Glycol",
+                            "Robatussin",
+                            "Milk of Mag",
+                            "Senna Plus",
+                            "Senna",
+                            "Acetaminophen"
+                        ],
+                    "POS": 
+                        [
+                            "Email Eddie @Eddie.Hirschman@cedarthing.com",
+                            "As400 Price is Not acceptable",
+                            "Pharmastar number is #111-111-1111"
+                        ]
+                }
+            ]
+
+        }
+    },
+    {
+        "Corporation":{
+            "Code": "Trio",
+            "Facilities":[
+                {
+                    "Name": "Fredericksberg",
+                    "Number": "300",
+                    "Code": "FSNF",
+                    "Info": "",
+                    "Contacts": [],
+                    "OTCs": ["Do not send ANY OTCs"],
+                    "POS": []
+                },
+                {
+                    "Name": "Rose HIll",
+                    "Number": "301",
+                    "Code": "ROSE",
+                    "Info": "",
+                    "Contacts": [],
+                    "OTCs": ["Do not send ANY OTCs"],
+                    "POS": []
+                }
+            ]
+
+        }
+    },
+    {
+        "Corporation":{
+            "Code":"AMH",
+            "Facilities":
+            [
+                {
+                    "Name": "Leesburg",
+                    "Number": "450",
+                    "Code": "HLEES",
+                    "Info": "",
+                    "Contacts": [],
+                    "OTCs": ["Tylenol","Miralax"],
+                    "POS": ["Override any OTC block unless on OTC list"]
+                },
+                {
+                    "Name": "King George",
+                    "Number": "451",
+                    "Code": "HKING",
+                    "Info": "",
+                    "Contacts": [],
+                    "OTCs": [],
+                    "POS": []
+                }
+            ]
+        }
+    },
+    {
+        "Corporation":{
+            "Code":"A1S",
+            "Facilities":
+            [
+                {
+                    "Name": "Avenues",
+                    "Number": "450",
+                    "Code": "HLEES",
+                    "Info": "",
+                    "Contacts": [],
+                    "OTCs": ["Tylenol","Miralax"],
+                    "POS": ["Override any OTC block unless on OTC list"]
+                },
+                {
+                    "Name": "King George",
+                    "Number": "451",
+                    "Code": "HKING",
+                    "Info": "",
+                    "Contacts": [],
+                    "OTCs": [],
+                    "POS": []
+                }
+            ]
+        }
+    }
+]
