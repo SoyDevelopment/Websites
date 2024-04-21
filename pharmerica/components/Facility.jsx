@@ -49,7 +49,7 @@ const Facility = (facility) => {
       ];
 
 
-    const [tab, setTab] = useState('otcs')
+    const [tab, setTab] = useState('contacts')
 
     const [isPending, startTransition] = useTransition()
 
@@ -71,17 +71,19 @@ const Facility = (facility) => {
                     </p>
                     <div className="flex justify-start flex-row mt-8">
                     <TabButton 
-                        selectTab={() => handleTabChange('otcs')} 
-                        active={tab === 'otcs'}
-                    >
-                        OTCs
-                    </TabButton>
-                    <TabButton 
                         selectTab={() => handleTabChange('contacts')} 
                         active={tab === 'contacts'}
                     >
                         Facility Contacts
                     </TabButton>
+
+                    <TabButton 
+                        selectTab={() => handleTabChange('otcs')} 
+                        active={tab === 'otcs'}
+                    >
+                        OTCs
+                    </TabButton>
+                    
                     <TabButton 
                         selectTab={() => handleTabChange('pos')} 
                         active={tab === 'pos'}
