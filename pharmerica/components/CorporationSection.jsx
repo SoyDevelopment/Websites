@@ -24,7 +24,6 @@ const CorporationSection = () => {
         <h2 className='text-center text-4xl font-bold text-white flex flex-row justify-center items-center'>
             Our Accounts
         </h2>
-        <p>Corporation Info</p>
         <div className="text-white flex flex-row justify-center items-center gap-2 py-6" >
             {
             Accounts.map( (corporation) => <CorporationTag
@@ -34,6 +33,7 @@ const CorporationSection = () => {
             />)
             }
         </div>
+        <p>Corporation Info</p>
         <div className='flex flex-row justify-center items-center'>
             {
                 filterCorporations.map( (corp) => <Corporation key ={corp.Code} facilities= {corp} />)
