@@ -33,7 +33,13 @@ const CorporationSection = () => {
             />)
             }
         </div>
-        <p>Corporation Info</p>
+        <p className='text-center'>
+            {
+                tag === "All" 
+                ? "Please Select a Corporation Code above for a list of their facilities and rules" 
+                : filterCorporations.map( (corp) => corp.Info )
+            }
+        </p>
         <div className='flex flex-row justify-center items-center'>
             {
                 filterCorporations.map( (corp) => <Corporation key ={corp.Code} facilities= {corp} />)

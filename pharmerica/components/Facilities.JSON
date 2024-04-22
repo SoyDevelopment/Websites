@@ -2,6 +2,7 @@
     {
         "Corporation":{
             "Code": "MQS",
+            "Info":"This is a placeholder message to be replaced with Corporation specific information. MQS",
             "Facilities":
             [
                 {
@@ -96,7 +97,8 @@
     },
     {
         "Corporation":{
-            "Code": "Trio",
+            "Code": "TRIO",
+            "Info":"This is a placeholder message to be replaced with Corporation specific information. TRIO",
             "Facilities":[
                 {
                     "Name": "Fredericksberg",
@@ -123,6 +125,7 @@
     {
         "Corporation":{
             "Code":"AMH",
+            "Info":"This is a placeholder message to be replaced with Corporation specific information. AMH",
             "Facilities":
             [
                 {
@@ -149,6 +152,7 @@
     {
         "Corporation":{
             "Code":"A1S",
+            "Info":"This is a placeholder message to be replaced with Corporation specific information. A1S",
             "Facilities":
             [
                 {
