@@ -13,11 +13,11 @@ const Facility = (facility) => {
           title: "OTCs",
           id: "otcs",
           content: (
-            <ul className="list-disc pl-2">
+            <ul className="list-disc pl-2 grid grid-cols-3 gap-x-1 uppercase">
               {
-                data.OTCs.length > 0 
-                ? data.OTCs.sort().map( (otc, index)=> <li key={index}>{otc}</li>) 
-                : "Facility has no OTC List"
+                data.OTCs.length == 0 
+                ? <><div className='col-span-1'/><p className='col-span-1'>Facility has no OTC List</p></>
+                : data.OTCs.sort().map( (otc, index)=> <li className='col-span-1' key={index}>{otc}</li>) 
               }
             </ul>
           ),
@@ -26,7 +26,7 @@ const Facility = (facility) => {
           title: "Facility Contacts",
           id: "contacts",
           content: (
-            <ul className="list-disc pl-2">
+            <ul className="list-none pl-2">
               {
                 data.Contacts.map( (contact, index) => <Contacts 
                 key = {index}
@@ -41,7 +41,7 @@ const Facility = (facility) => {
           title: "Pos",
           id: "pos",
           content: (
-            <ul className="list-disc pl-2">
+            <ul className="list-none pl-2">
               {data.POS.map( (point, index) => <li key={index}>{point}</li>)}
             </ul>
           ),
@@ -62,12 +62,12 @@ const Facility = (facility) => {
     return (
         <section className="text-white">
             <div className="md:grid md:grid-cols-1 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-                <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
+                <div className='mt-4 md:mt-0 text-left flex flex-col h-full items-center'>
                     <h2 className='text-4xl text-white font-bold mb-4'> 
                       {`${data.Name} - ${data.Number}`}
                     </h2>
                     <p className='text-base lg:text-lg text-center'>
-                    {data.Info||"No info for this facility"}
+                      {data.Info||"No info for this facility"}
                     </p>
                     <div className="flex justify-start flex-row mt-8">
                     <TabButton 
@@ -91,7 +91,7 @@ const Facility = (facility) => {
                         POS Tips
                     </TabButton>
                     </div>
-                    <div className="mt-8">{TAB_DATA.find( (givenTab) => givenTab.id === tab).content}</div>
+                    <div className="mt-5">{TAB_DATA.find( (givenTab) => givenTab.id === tab).content}</div>
                 </div>
             </div>
         </section>

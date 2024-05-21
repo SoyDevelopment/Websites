@@ -26,14 +26,14 @@ const CorporationSection = () => {
         </h2>
         <div className="text-white flex flex-row justify-center items-center gap-2 py-6" >
             {
-            Accounts.map( (corporation) => <CorporationTag
-            key = {corporation.Code} 
-            name= {corporation.Code}
-            onClick= {handleTagChange}
-            />)
+                Accounts.map( (corporation) => <CorporationTag
+                    key = {corporation.Code} 
+                    name= {corporation.Code}
+                    onClick= {handleTagChange}
+                />)
             }
         </div>
-        <p className='text-center'>
+        <p className='text-center text-red-400'>
             {
                 tag === "All" 
                 ? "Please Select a Corporation Code above for a list of their facilities and rules" 
